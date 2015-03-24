@@ -12,6 +12,7 @@
 		32FB392F1AC2043400B9D02C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32FB392E1AC2043400B9D02C /* Images.xcassets */; };
 		32FB39321AC2043400B9D02C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32FB39301AC2043400B9D02C /* LaunchScreen.xib */; };
 		32FB393E1AC2043400B9D02C /* StarWarsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FB393D1AC2043400B9D02C /* StarWarsTests.m */; };
+		32FB394A1AC2162E00B9D02C /* AGTStarWarsCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FB39491AC2162E00B9D02C /* AGTStarWarsCharacter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 		32FB39371AC2043400B9D02C /* StarWarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarWarsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32FB393C1AC2043400B9D02C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32FB393D1AC2043400B9D02C /* StarWarsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StarWarsTests.m; sourceTree = "<group>"; };
+		32FB39481AC2162E00B9D02C /* AGTStarWarsCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTStarWarsCharacter.h; sourceTree = "<group>"; };
+		32FB39491AC2162E00B9D02C /* AGTStarWarsCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTStarWarsCharacter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,7 @@
 				32FB392C1AC2043400B9D02C /* AppDelegate.m */,
 				32FB392E1AC2043400B9D02C /* Images.xcassets */,
 				32FB39301AC2043400B9D02C /* LaunchScreen.xib */,
+				32FB39471AC2160700B9D02C /* Models */,
 				32FB39271AC2043400B9D02C /* Supporting Files */,
 			);
 			path = StarWars;
@@ -109,6 +113,15 @@
 				32FB393C1AC2043400B9D02C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32FB39471AC2160700B9D02C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				32FB39481AC2162E00B9D02C /* AGTStarWarsCharacter.h */,
+				32FB39491AC2162E00B9D02C /* AGTStarWarsCharacter.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32FB392D1AC2043400B9D02C /* AppDelegate.m in Sources */,
+				32FB394A1AC2162E00B9D02C /* AGTStarWarsCharacter.m in Sources */,
 				32FB392A1AC2043400B9D02C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
