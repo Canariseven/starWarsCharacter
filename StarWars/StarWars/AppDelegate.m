@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "AGTStarWarsCharacter.h"
+#import "AGTCharacterViewController.h"
 
 @implementation AppDelegate
 
@@ -16,9 +17,32 @@
     self.window = [[UIWindow alloc]
                    initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    // Override point for customization after application launch.
+    //Creamos una vista de tipo UIWindow
     self.window.backgroundColor = [UIColor orangeColor];
     [self.window makeKeyAndVisible];
+    
+    
+    // Crear un model
+    NSBundle *b = [NSBundle mainBundle];
+    NSURL *vaderURL = [NSURL URLWithString:@"http://es.wikipedia.org/wiki/Darth_Vader"];
+    NSData *vaderSound = [NSData dataWithContentsOfURL:[b URLForResource:@"vader"
+                                                           withExtension:@"caf"]];
+    
+    UIImage *vaderImage = [UIImage imageNamed:@"darthVader.jpg"];
+    
+    AGTStarWarsCharacter *model = [[AGTStarWarsCharacter alloc] initWithName:@"Anakin Skywalker"
+                                                                       alias:@"Darth Vader"
+                                                                         url:vaderURL
+                                                                   soundData:vaderSound
+                                                                       photo:vaderImage];
+    // Creamos el controlador que lo muestre
+    AGTCharacterViewController *charVC = [[AGTCharacterViewController alloc]
+                                          initWithModel:model];
+
+
+    
+    self.window.rootViewController = charVC;
+    
     return YES;
 }
 
