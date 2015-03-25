@@ -34,6 +34,7 @@
 		32FB394F1AC21A8000B9D02C /* AGTCharacterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32FB394D1AC21A8000B9D02C /* AGTCharacterViewController.xib */; };
 		32FF40C31AC34E8600B69E0F /* AGTWikiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FF40C11AC34E8600B69E0F /* AGTWikiViewController.m */; };
 		32FF40C41AC34E8600B69E0F /* AGTWikiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32FF40C21AC34E8600B69E0F /* AGTWikiViewController.xib */; };
+		32FF40C71AC376E800B69E0F /* AGTStarWarsUniverse.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FF40C61AC376E800B69E0F /* AGTStarWarsUniverse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,8 @@
 		32FF40C01AC34E8600B69E0F /* AGTWikiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTWikiViewController.h; sourceTree = "<group>"; };
 		32FF40C11AC34E8600B69E0F /* AGTWikiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTWikiViewController.m; sourceTree = "<group>"; };
 		32FF40C21AC34E8600B69E0F /* AGTWikiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AGTWikiViewController.xib; sourceTree = "<group>"; };
+		32FF40C51AC376E800B69E0F /* AGTStarWarsUniverse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTStarWarsUniverse.h; path = ../AGTStarWarsUniverse.h; sourceTree = "<group>"; };
+		32FF40C61AC376E800B69E0F /* AGTStarWarsUniverse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGTStarWarsUniverse.m; path = ../AGTStarWarsUniverse.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +203,8 @@
 		32FB39471AC2160700B9D02C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				32FF40C51AC376E800B69E0F /* AGTStarWarsUniverse.h */,
+				32FF40C61AC376E800B69E0F /* AGTStarWarsUniverse.m */,
 				32FB39481AC2162E00B9D02C /* AGTStarWarsCharacter.h */,
 				32FB39491AC2162E00B9D02C /* AGTStarWarsCharacter.m */,
 			);
@@ -338,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32FB392D1AC2043400B9D02C /* AppDelegate.m in Sources */,
+				32FF40C71AC376E800B69E0F /* AGTStarWarsUniverse.m in Sources */,
 				32FB394A1AC2162E00B9D02C /* AGTStarWarsCharacter.m in Sources */,
 				323A73EF1AC227D30012F9AB /* CafPlayer.m in Sources */,
 				32FF40C31AC34E8600B69E0F /* AGTWikiViewController.m in Sources */,

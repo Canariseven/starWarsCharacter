@@ -10,6 +10,7 @@
 #import "AGTStarWarsCharacter.h"
 #import "AGTCharacterViewController.h"
 #import "AGTWikiViewController.h"
+
 @implementation AppDelegate
 
 
@@ -21,18 +22,9 @@
     self.window.backgroundColor = [UIColor orangeColor];
     [self.window makeKeyAndVisible];
     
-    
-
-  
-    
-
-
-
-    
-    
-    
     // Creo un combinador
     UITabBarController *tabVc = [[UITabBarController alloc] init];
+    
     tabVc.viewControllers = [self arrayOfControllers];
 
     self.window.rootViewController = tabVc;

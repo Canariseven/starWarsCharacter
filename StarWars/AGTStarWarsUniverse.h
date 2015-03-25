@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "AGTStarWarsCharacter.h"
 @interface AGTStarWarsUniverse : NSObject
+
+@property (nonatomic, readonly) NSUInteger rebelCount;
+@property (nonatomic, readonly) NSUInteger imperialCount;
+
+-(AGTStarWarsUniverse *) rebelAtIndex:(NSUInteger)index;
+-(AGTStarWarsUniverse *) imperialAtIndex:(NSUInteger)index;
 
 @end
