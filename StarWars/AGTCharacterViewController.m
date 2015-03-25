@@ -24,6 +24,10 @@
 #pragma mark - View LifeCycle
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    // Asegurarse que no se ocupa toda la pantalla
+    // Cuando estás en un combinador
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    
     // Sincronizar model -> vista
     self.photoView.image = self.model.photo;
 }

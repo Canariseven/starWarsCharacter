@@ -22,7 +22,7 @@
 
 -(void) viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-  
+    self.edgesForExtendedLayout = UIRectEdgeNone;
     [self modifyStatusOfActivity:NO];
     self.browser.delegate = self;
     
