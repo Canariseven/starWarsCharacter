@@ -11,7 +11,6 @@
 
 @implementation AGTCharacterViewController
 
-
 - (id)initWithModel:(AGTStarWarsCharacter *) model{
     if (self = [super initWithNibName:nil
                                bundle:nil]){
@@ -21,19 +20,19 @@
 }
 
 
-#pragma - View LifeCycle
+#pragma mark - View LifeCycle
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     // Sincronizar model -> vista
     self.photoView.image = self.model.photo;
 }
 
-#pragma - Memory
+#pragma mark - Memory
 -(void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
 }
 
-#pragma - Actions
+#pragma mark - Actions
 - (IBAction)playSound:(id)sender {
     
     // Sacamos el sonido del modelo

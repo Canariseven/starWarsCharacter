@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "AGTStarWarsCharacter.h"
 #import "AGTCharacterViewController.h"
-
+#import "AGTWikiViewController.h"
 @implementation AppDelegate
 
 
@@ -36,12 +36,14 @@
                                                                    soundData:vaderSound
                                                                        photo:vaderImage];
     // Creamos el controlador que lo muestre
-    AGTCharacterViewController *charVC = [[AGTCharacterViewController alloc]
-                                          initWithModel:model];
-
-
+//    AGTCharacterViewController *charVC = [[AGTCharacterViewController alloc]
+//                                          initWithModel:model];
     
-    self.window.rootViewController = charVC;
+
+    AGTWikiViewController *wikiVC = [[AGTWikiViewController alloc]
+                                     initWithModel:model];
+    
+    self.window.rootViewController = wikiVC;
     
     return YES;
 }

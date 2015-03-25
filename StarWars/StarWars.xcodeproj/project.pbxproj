@@ -32,6 +32,8 @@
 		32FB394A1AC2162E00B9D02C /* AGTStarWarsCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FB39491AC2162E00B9D02C /* AGTStarWarsCharacter.m */; };
 		32FB394E1AC21A8000B9D02C /* AGTCharacterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FB394C1AC21A8000B9D02C /* AGTCharacterViewController.m */; };
 		32FB394F1AC21A8000B9D02C /* AGTCharacterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32FB394D1AC21A8000B9D02C /* AGTCharacterViewController.xib */; };
+		32FF40C31AC34E8600B69E0F /* AGTWikiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FF40C11AC34E8600B69E0F /* AGTWikiViewController.m */; };
+		32FF40C41AC34E8600B69E0F /* AGTWikiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32FF40C21AC34E8600B69E0F /* AGTWikiViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,9 @@
 		32FB394B1AC21A8000B9D02C /* AGTCharacterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTCharacterViewController.h; sourceTree = "<group>"; };
 		32FB394C1AC21A8000B9D02C /* AGTCharacterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCharacterViewController.m; sourceTree = "<group>"; };
 		32FB394D1AC21A8000B9D02C /* AGTCharacterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AGTCharacterViewController.xib; sourceTree = "<group>"; };
+		32FF40C01AC34E8600B69E0F /* AGTWikiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTWikiViewController.h; sourceTree = "<group>"; };
+		32FF40C11AC34E8600B69E0F /* AGTWikiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTWikiViewController.m; sourceTree = "<group>"; };
+		32FF40C21AC34E8600B69E0F /* AGTWikiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AGTWikiViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +212,9 @@
 				32FB394B1AC21A8000B9D02C /* AGTCharacterViewController.h */,
 				32FB394C1AC21A8000B9D02C /* AGTCharacterViewController.m */,
 				32FB394D1AC21A8000B9D02C /* AGTCharacterViewController.xib */,
+				32FF40C01AC34E8600B69E0F /* AGTWikiViewController.h */,
+				32FF40C11AC34E8600B69E0F /* AGTWikiViewController.m */,
+				32FF40C21AC34E8600B69E0F /* AGTWikiViewController.xib */,
 			);
 			name = Controllers;
 			path = ..;
@@ -297,6 +305,7 @@
 				323A73EB1AC227D30012F9AB /* tarkin.jpg in Resources */,
 				32FB39321AC2043400B9D02C /* LaunchScreen.xib in Resources */,
 				323A73E71AC227D30012F9AB /* palpatine.jpg in Resources */,
+				32FF40C41AC34E8600B69E0F /* AGTWikiViewController.xib in Resources */,
 				323A73EA1AC227D30012F9AB /* tarkin.caf in Resources */,
 				323A73E01AC227D30012F9AB /* c3po.jpg in Resources */,
 				323A73EE1AC227D30012F9AB /* yoda.jpg in Resources */,
@@ -331,6 +340,7 @@
 				32FB392D1AC2043400B9D02C /* AppDelegate.m in Sources */,
 				32FB394A1AC2162E00B9D02C /* AGTStarWarsCharacter.m in Sources */,
 				323A73EF1AC227D30012F9AB /* CafPlayer.m in Sources */,
+				32FF40C31AC34E8600B69E0F /* AGTWikiViewController.m in Sources */,
 				32FB392A1AC2043400B9D02C /* main.m in Sources */,
 				32FB394E1AC21A8000B9D02C /* AGTCharacterViewController.m in Sources */,
 			);
