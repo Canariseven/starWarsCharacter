@@ -16,17 +16,20 @@
 @property (strong, nonatomic) NSURL *wikiURL;
 @property (strong, nonatomic) NSData *soundData;
 @property (strong, nonatomic) UIImage *photo;
+@property (strong, nonatomic) UIImage *icon;
 
 // designed
 -(id) initWithName:(NSString *) name
              alias:(NSString *) alias
                url:(NSURL *) wikiURL
          soundData:(NSData *) soundData
-             photo:(UIImage *) photo;
+             photo:(UIImage *) photo
+             icon:(UIImage *) icon;
 
 //Conveniencia
 -(id) initWithAlias:(NSString *) alias
                 url:(NSURL *) wikiURL
           soundData:(NSData *) soundData
-              photo:(UIImage *) photo;
+              photo:(UIImage *) photo
+             icon:(UIImage *) icon;
 @end

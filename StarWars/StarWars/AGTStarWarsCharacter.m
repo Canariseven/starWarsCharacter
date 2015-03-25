@@ -14,13 +14,15 @@
              alias:(NSString *) alias
                url:(NSURL *) wikiURL
          soundData:(NSData *) soundData
-             photo:(UIImage *) photo{
+             photo:(UIImage *) photo
+             icon:(UIImage *) icon{
     if (self = [super init]){
         _name = name;
         _alias = alias;
         _wikiURL = wikiURL;
         _soundData = soundData;
         _photo = photo;
+        _icon = icon;
     }
     return self;
 }
@@ -28,12 +30,14 @@
 -(id) initWithAlias:(NSString *) alias
                 url:(NSURL *) wikiURL
           soundData:(NSData *) soundData
-              photo:(UIImage *) photo{
+              photo:(UIImage *) photo
+             icon:(UIImage *) icon{
     return [self initWithName:nil
                         alias:alias
                           url:wikiURL
                     soundData:soundData
-                        photo:photo];
+                        photo:photo
+                         icon:icon];
 }
 
 
