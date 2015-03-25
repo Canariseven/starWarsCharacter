@@ -21,9 +21,8 @@
 
 -(void) viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    [self.activityView setHidden:NO];
-    [self.activityView startAnimating];
-    
+  
+    [self modifyStatusOfActivity:NO];
     self.browser.delegate = self;
     
     // Sincronizar model -> vista
@@ -42,8 +41,7 @@
 -(void)webViewDidFinishLoad:(UIWebView *)webView{
 
     // Para y oculto el activity
-    [self.activityView stopAnimating];
-    [self.activityView setHidden:YES];
+     [self modifyStatusOfActivity:YES];
 
 }
 -(BOOL)webView:(UIWebView *)webView
@@ -56,6 +54,32 @@ navigationType:(UIWebViewNavigationType)navigationType{
         return YES;
     }
 }
+-(void) webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
+    
+    // ocultar activityView
+        [self modifyStatusOfActivity:YES];
+    // hacer un NSLog
+    NSString *message = [NSString stringWithFormat:@"%@",error.description];
+    UIAlertView * alert = [[UIAlertView alloc]
+                           initWithTitle:@"Error al cargar página"
+                           message:message
+                           delegate:nil
+                           cancelButtonTitle:@"Ok!"
+                           otherButtonTitles:nil,
+                           nil];
+    [alert show];
+    
+}
 
+#pragma mark - Sincronize View
+-(void) modifyStatusOfActivity:(BOOL)hidden{
+    if (hidden == YES){
+        [self.activityView stopAnimating];
+        [self.activityView setHidden:hidden];
+    }else{
+        [self.activityView setHidden:hidden];
+        [self.activityView startAnimating];
+    }
+}
 
 @end
