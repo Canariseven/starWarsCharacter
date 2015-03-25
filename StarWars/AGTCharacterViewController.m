@@ -7,7 +7,7 @@
 //
 
 #import "AGTCharacterViewController.h"
-
+#import "AGTWikiViewController.h"
 
 @implementation AGTCharacterViewController
 
@@ -44,6 +44,14 @@
     // Lo reproducimos
     self.player = [CafPlayer cafPlayer];
     [self.player playSoundData:self.model.soundData];
+}
+
+- (IBAction)displayWiki:(id)sender{
+    
+    //Crear un WikiVC
+    AGTWikiViewController *wikiVC = [[AGTWikiViewController alloc]initWithModel:self.model];
+    // Hacer un push
+    [self.navigationController pushViewController:wikiVC animated:true];
 }
 
 @end

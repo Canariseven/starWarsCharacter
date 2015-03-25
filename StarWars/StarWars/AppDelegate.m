@@ -39,15 +39,11 @@
     AGTCharacterViewController *charVC = [[AGTCharacterViewController alloc]
                                           initWithModel:model];
     
-
-    AGTWikiViewController *wikiVC = [[AGTWikiViewController alloc]
-                                     initWithModel:model];
-    
     
     // Creo un combinador
-    UITabBarController *tabVC = [[UITabBarController alloc] init];
-    tabVC.viewControllers = @[charVC, wikiVC];
-    self.window.rootViewController = tabVC;
+    UINavigationController *navVc = [[UINavigationController alloc] init];
+    [navVc pushViewController:charVC animated:YES];
+    self.window.rootViewController = navVc;
     
     return YES;
 }
