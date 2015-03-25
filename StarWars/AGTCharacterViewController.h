@@ -9,14 +9,15 @@
 @import UIKit;
 
 #import "AGTStarWarsCharacter.h"
+#import "CafPlayer.h"
 
 @interface AGTCharacterViewController : UIViewController
-
+@property (nonatomic, strong) CafPlayer *player;
 @property (nonatomic, strong) AGTStarWarsCharacter *model;
 @property (nonatomic, weak) IBOutlet UIImageView *photoView;
 
 - (id)initWithModel:(AGTStarWarsCharacter *) model;
 
-- (IBAction)play:(id)sender;
+- (IBAction)playSound:(id)sender;
 
 @end

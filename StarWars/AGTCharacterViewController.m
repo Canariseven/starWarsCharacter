@@ -20,20 +20,26 @@
     return self;
 }
 
-- (IBAction)play:(id)sender {
-}
 
-#pragma Cycle-life
+#pragma - View LifeCycle
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     // Sincronizar model -> vista
     self.photoView.image = self.model.photo;
 }
 
-
+#pragma - Memory
 -(void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
 }
 
+#pragma - Actions
+- (IBAction)playSound:(id)sender {
+    
+    // Sacamos el sonido del modelo
+    // Lo reproducimos
+    self.player = [CafPlayer cafPlayer];
+    [self.player playSoundData:self.model.soundData];
+}
 
 @end
