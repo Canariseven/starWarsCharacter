@@ -36,14 +36,18 @@
                                                                    soundData:vaderSound
                                                                        photo:vaderImage];
     // Creamos el controlador que lo muestre
-//    AGTCharacterViewController *charVC = [[AGTCharacterViewController alloc]
-//                                          initWithModel:model];
+    AGTCharacterViewController *charVC = [[AGTCharacterViewController alloc]
+                                          initWithModel:model];
     
 
     AGTWikiViewController *wikiVC = [[AGTWikiViewController alloc]
                                      initWithModel:model];
     
-    self.window.rootViewController = wikiVC;
+    
+    // Creo un combinador
+    UITabBarController *tabVC = [[UITabBarController alloc] init];
+    tabVC.viewControllers = @[charVC, wikiVC];
+    self.window.rootViewController = tabVC;
     
     return YES;
 }
