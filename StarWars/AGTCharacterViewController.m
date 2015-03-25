@@ -16,7 +16,7 @@
                                bundle:nil]){
         _model = model;
         self.title = [model alias];
-        self.tabBarItem.image = [self imageWithImage:[model icon] scaledToSize:CGSizeMake(30, 30)];
+        self.tabBarItem.image = [self.model icon];
     }
     return self;
 }
@@ -55,12 +55,4 @@
     [self.navigationController pushViewController:wikiVC animated:true];
 }
 
-#pragma mark - Utils
-- (UIImage *)imageWithImage:(UIImage *)image scaledToSize:(CGSize)newSize {
-    UIGraphicsBeginImageContextWithOptions(newSize, NO, 0.0);
-    [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
-    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return newImage;
-}
 @end
